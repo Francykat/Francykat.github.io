@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">FKNIÑOL</a>
+            </div>
+            <div>
+                <nav id="nav">
+                   <ul>
+                    <li><a href="#inicio"  onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"  onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"  onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum"  onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio"  onclick="seleccionar()">PORTAFOLIO</a></li>
+                   </ul>
+                </nav>  
+            </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCIÓN INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Img/profile.png" alt="">
+            </div>
+            <h1>FRANCY NIÑO</h1>
+            <H2>DEVELOPER II</H2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/francy-katerine-niño-lópez" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://join.skype.com/invite/i2P8pWZivNsE" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.facebook.com/katninol" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/katnino27" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://walink.co/24726a" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/Francykat" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCIÓN SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Bienvenido, soy Francy Niño. <br><br></span> Estudiante de Ingeniería de Sistemas (7mo semestre) y Tecnóloga en Análisis y Desarrollo de Sistemas de Información. 
+                Poseo experiencia en el desarrollo de aplicaciones y una amplia gama de habilidades técnicas que incluyen programación 
+                en lenguajes como Java, HTML, CSS, JavaScript, Angular y Laravel, tanto en el frontend como en el backend. Cuento con 
+                experiencia en el uso de herramientas de desarrollo para encontrar soluciones eficientes y adecuadas a los desafíos 
+                tecnológicos. Mi habilidad principal radica en adaptarme a las necesidades específicas de la organización y abordar temas 
+                relacionados con el análisis, diseño y programación de sistemas de información. Mi enfoque es proporcionar soluciones 
+                oportunas para el negocio, automatizar procesos y alinear los requerimientos con la arquitectura actual de la organización. <br></p>
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                  <h3>Datos Personales</h3>
+                  <ul>
+                    <li>
+                        <strong>Edad</strong>
+                        31 años
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        +57 319 6980286
+                    </li>
+                    <li>
+                        <strong>Correo</strong>
+                        francykat0527@gmail.com
+                    </li>
+                    <li>
+                        <strong>Ciudad de Residencia</strong>
+                        Medellín, Antioquia, Colombia.
+                    </li>
+                  </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                  <h3>Intereses</h3>
+                  <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-person-skating"></i>
+                            <span>Patinar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Ejercicio</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Caminata</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-sun-plant-wilt"></i>
+                            <span>Jardineria</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Cine</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Programar</span>
+                        </div>
+                    </div>    
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+          <div class="contenido-seccion">
+            <h2>skills</h2>
+            <div class="fila">
+                <!--Tecnical skill-->
+                <div class="col">
+                    <h3>Tecnical Skill<br><br></h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html & css</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javaScript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Laravel</span>
+                        <div class="barra-skill">
+                            <div class="progreso laravel">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flutter & dart</span>
+                        <div class="barra-skill">
+                            <div class="progreso flutter">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Profesional Skill-->
+                <div class="col">
+                    <h3>Profesional Skill<br><br></h3>
+                    <div class="skill">
+                        <span>Adaptable a cambios.</span>
+                        <div class="barra-skill">
+                            <div class="progreso adaptable">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo.</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas.</span>
+                        <div class="barra-skill">
+                            <div class="progreso resolucion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Razonamiento lógico.</span>
+                        <div class="barra-skill">
+                            <div class="progreso logico">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autogestión.</span>
+                        <div class="barra-skill">
+                            <div class="progreso autogestion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación.</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>INGENIERIA DE SISTEMAS</h4>
+                         <span class="instituto">UNAD Universidad Nacional Abierta y a Distancia</span>  
+                         <span class="fecha">En Curso</span> 
+                         <span class="perfil">PERFIL</span> 
+                         <p>Perfil:<br> El programa de Ingeniería de Sistemas me he permitido adquirir una sólida comprensión de cómo abordar desafíos tecnológicos y desarrollar soluciones efectivas. 
+                            Mi capacidad para concebir sistemas innovadores, diseñar arquitecturas de software sólidas y llevar a cabo la implementación exitosa de proyectos de TI 
+                            es el resultado de este programa de estudios.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>TECNOLOGO EN ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN</h4>
+                         <span class="instituto">SENA</span>  
+                         <span class="fecha">2020 - 2022</span>
+                         <span class="perfil">PERFIL</span>
+                         <p>El programa esta diseñado específicamente para adquirir habilidades esenciales en el campo de la tecnología de la información. Durante mi participación en este programa, 
+                            desarrollé competencias clave que me permiten desempeñarme eficazmente en el análisis, diseño y desarrollo de sistemas de información.</p>
+                         <div class="conectori">
+                            <div class="circuloi"></div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>DEVELOPER II</h4>
+                         <span class="instituto">SII COLOMBIA (Banking Arquitecture Banco BBVA Colombia)</span>  
+                         <span class="fecha">Abr. 2022 - Ago. 2023</span>  
+                         <span class="logros">LOGROS</span>
+                         <p>La utilización y reutilización de las diversas API en todo el banco a escala global, mientras se garantiza que la 
+                            funcionalidad de las existentes siga siendo justa.
+                            Modificación y despliegue de aproximadamente 300 artefactos para abordar la deuda técnica, todo ello salvaguardando la 
+                            integridad de las características productivas y rectificando dicha deuda técnica.
+                            Resolución de necesidades a los diferentes proyectos de negocio del banco a través de atención de solicitudes por medio de la
+                            herramienta Jira.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                    </div>
+                    <div class="item der">
+                        <h4>TALENTO CONSULTORES (Plataforma Sistegra SST)</h4>
+                         <span class="instituto">DEVELOPER I</span>  
+                         <span class="fecha">May. 2021 - Mar. 2022</span>  
+                         <span class="logros">LOGROS</span>
+                         <p>Realizar la codificación de los módulos del sistema y el programa principal, a partir de la utilización del lenguaje JavaScript, 
+                            Laravel, PHP, HTML, CSS, de acuerdo con las especificaciones del diseño.
+                            Construir la interfaz de usuario, determinando las entradas y salidas requeridas en el diseño y definiendo los lineamientos para 
+                            la navegación, de acuerdo con las necesidades del usuario.
+                            Construir la base de datos, a partir del modelo de datos determinado en el diseño del sistema.</p>
+                         <div class="conectord">
+                            <div class="circulod"></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Img/proyecto1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PORTAFOLIO</h3>
+                        <P>HTML, CSS & JAVASCRIPT</P>
+                        <a href="https://github.com/Francykat/Francykat.github.io.git" target="_blank">Ver código <i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Img/proyecto2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto II</h3>
+                        <P>Observaciones</P>
+                        <a href="Error.html" target="_blank">Ver código <i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Img/proyecto3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto III</h3>
+                        <P>Observaciones</P>
+                        <a href="Error.html" target="_blank">Ver código <i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>
+            <a href="cv/Hoja de vida Francy.pdf" target="_blank">Descargar CV<i class="fa-solid fa-download"></i></a>
+            <span class="overlay"></span>
+        </button>
+    </section>
+    
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i> 
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/francy-katerine-niño-lópez" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://join.skype.com/invite/i2P8pWZivNsE" target="_blank"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.facebook.com/katninol" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/katnino27" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://walink.co/24726a" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Francykat" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+   <!--SCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>
